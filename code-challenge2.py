@@ -10,6 +10,6 @@ for denom in denominations:
     amount = amount % denom
     print(count, "-", denom)
 
-text = input("\nSana lahat ng tao ganito: ")
+text = input("\nSana lahat ng tao ganito... ")
 
 
