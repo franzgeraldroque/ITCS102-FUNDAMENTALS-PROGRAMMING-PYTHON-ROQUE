@@ -1,3 +1,3 @@
 name = input("Enter a string -> ")
 
-print("Your name has ", len(name), "character")
+print("Your name has ", len(name), "character") 
