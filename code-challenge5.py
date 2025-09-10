@@ -28,3 +28,6 @@ elif genre == 'horror':
             print("Anime recommended for romance are the following: \n 1.The Grimm Variations \n 2.Mieruko-chan \n 3.Junji Ito Maniac: Japanese Tales of the Macabre")
     else:
         print("Sorry, no horror anime found for that time and decade.")
+
+else:
+    print("Sorry", genre, "is not on the genre choices")
