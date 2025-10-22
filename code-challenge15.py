@@ -1,4 +1,4 @@
-anim = ["Jujutsu Kaisen", "Naruto", "Attack on Titan", "MyHeroAcademia"]
+anim = ["Jujutsu Kaisen", "Naruto", "Attack on Titan", "MyHeroAcademia", "One Piece", "Chainsaw Man", "Demon Slayer", "Kuroko's Basketball"]
 anime = True
 anime_lower = [anim.lower() for anim in anim]
 
@@ -22,6 +22,9 @@ while anime == True:
         print("No such anime is found in the given anime recommendations")
         continue
 
-# anim = ["Jujutsu Kaisen", "Naruto", "Attack on Titan", "MyHeroAcademia"]
-# for anime in anime:
-#     print(anime)
+if watch_list:
+    print("\tYour selected anime list includes:")
+    for anim_title in watch_list:
+        print(f"- {anim_title.lower()}")
+else:
+    print("\n\tYou didn't select any anime that is recommended for your watch list.")
