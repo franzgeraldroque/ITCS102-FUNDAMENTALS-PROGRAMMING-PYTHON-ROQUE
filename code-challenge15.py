@@ -3,7 +3,7 @@ anime = True
 anime_lower = [anim.lower for anim in anim]
 
 while anime == True:
-    title = input("Enter the title of the anime (or type 'stop') to finish:")
+    title = input("Enter the title of the anime (or type 'stop') to finish:").lower()
 
     if title in anim == ['Jujutsu Kaisen', 'Naruto', 'Attack on Titan', 'MyHeroAcademia']: 
         print(f'{anim} has been added to your anime watch list')
@@ -21,3 +21,4 @@ while anime == True:
 # for anime in anime:
 
 #     print(anime)
+
