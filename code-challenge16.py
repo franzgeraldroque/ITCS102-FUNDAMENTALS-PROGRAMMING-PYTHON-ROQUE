@@ -59,17 +59,16 @@ while isTrue == True:
 
         search_id = input("Input Student ID to Search ---> ").lower()
         
-        for id in students_records.keys():
-            if search_id in students_records.keys():
-                print("Record is found")
+        if search_id in students_records.keys():
+            print("Record is found")
                 #print the record search student
-                for i in students_records[search_id]:
-                    print(f' -- {i}')
-                students_records.pop(search_id)
-                print("Record is deleted")
-            else:
-                print("No record found")
-                break
+            for i in students_records[search_id]:
+                print(f' -- {i}')
+            students_records.pop(search_id)
+            print("Record is deleted")
+        else:
+            print("No record found")
+            break
         continue
     elif choice == 'e':
         os.system()
@@ -125,3 +124,4 @@ while isTrue == True:
     else:
         print("Invalid Input")
         continue
+
