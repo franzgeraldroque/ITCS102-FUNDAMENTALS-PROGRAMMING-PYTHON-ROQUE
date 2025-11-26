@@ -821,5 +821,6 @@ def codechallenge16():
             print("Exiting the program.....")
             break
         else:
-            print("Invalid Input")
+            os.system("cls")
+            print("Invalid Input, please try again")
             continue
