@@ -301,6 +301,142 @@ def activity27():
         else:
             print("Error, pick between the choices only")
 
+def activity28():
+    #Step 1 
+    import pygame
+    import time
+    import random
+
+    # Initialize Pygame
+    pygame.init()
+
+    # Screen size
+    width = 600
+    height = 400
+    screen = pygame.display.set_mode((width, height))
+    pygame.display.set_caption('Snake Game')
+
+    # Colors (RGB)
+    white = (255, 255, 255)
+    black = (0, 0, 0)
+    red = (213, 50, 80)
+    green = (0, 255, 0)
+
+    # Game speed and block size
+    clock = pygame.time.Clock()
+    speed = 10
+    snake_block = 10
+
+    # Font for messages
+    font_style = pygame.font.SysFont(None, 30)
+
+
+    #Step 2 
+    def draw_snake(snake_list):
+        for block in snake_list:
+            pygame.draw.rect(screen, green, [block[0], block[1], snake_block, snake_block])
+
+    #Step 3 
+    def game_loop():
+        game_over = False
+        game_close = False
+
+        # Starting position of the snake
+        x = width / 2
+        y = height / 2
+
+        x_change = 0
+        y_change = 0
+
+        snake_list = []
+        length_of_snake = 1
+
+        # Generate first food
+        food_x = round(random.randrange(0, width - snake_block) / 10) * 10
+        food_y = round(random.randrange(0, height - snake_block) / 10) * 10
+
+        while not game_over:
+
+            # Loss screen
+            while game_close:
+                screen.fill(black)
+                message = font_style.render('You Lost! Press Q-Quit or C-Play Again', True, red)
+                screen.blit(message, [width / 6, height / 3])
+                pygame.display.update()
+
+                for event in pygame.event.get():
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_q:
+                            game_over = True
+                            game_close = False
+                        elif event.key == pygame.K_c:
+                            game_loop()
+
+            # Event handling (keyboard)
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    game_over = True
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_LEFT:
+                        x_change = -snake_block
+                        y_change = 0
+                    elif event.key == pygame.K_RIGHT:
+                        x_change = snake_block
+                        y_change = 0
+                    elif event.key == pygame.K_UP:
+                        y_change = -snake_block
+                        x_change = 0
+                    elif event.key == pygame.K_DOWN:
+                        y_change = snake_block
+                        x_change = 0
+
+            # Check if snake hits the wall
+            if x >= width or x < 0 or y >= height or y < 0:
+                game_close = True
+
+            # Update position
+            x += x_change
+            y += y_change
+
+            # Draw background and food
+            screen.fill(black)
+            pygame.draw.rect(screen, red, [food_x, food_y, snake_block, snake_block])
+
+            # Add snake head
+            snake_head = [x, y]
+            snake_list.append(snake_head)
+
+            # Remove extra segments if not growing
+            if len(snake_list) > length_of_snake:
+                del snake_list[0]
+
+            # Check self-collision
+            for segment in snake_list[:-1]:
+                if segment == snake_head:
+                    game_close = True
+
+            # Draw the snake
+            draw_snake(snake_list)
+
+            # Update display
+            pygame.display.update()
+
+            # Check if snake eats food
+            if x == food_x and y == food_y:
+                food_x = round(random.randrange(0, width - snake_block) / 10) * 10
+                food_y = round(random.randrange(0, height - snake_block) / 10) * 10
+                length_of_snake += 1
+
+            # Control game speed
+            clock.tick(speed)
+
+        # Quit Pygame
+        pygame.quit()
+        quit()
+
+    # Start the game
+    game_loop()
+
 
 
 #Code Challenges
@@ -561,3 +697,129 @@ def codechallenge15():
             print(f"- {anim_title.lower()}")
     else:
         print("\n\tYou didn't select any anime that is recommended for your watch list.")
+
+def codechallenge16():
+    import os
+    import json
+
+    os.system("cls")
+
+    print("STUDENT INFORMATION SYSTEM")
+    print("=======================================")
+
+    students_records = {}
+
+    isTrue = True
+
+    while isTrue == True:
+        print("Select from the options below \nA - Add Student Record\nB - Print all Record\nC - Search Student Record\nD - Delete a Student Record\nE - Edit Student Record\nF - Export Data\nG - Import Data\nH - Exit ")
+        choice = input("Enter your choice ---> ").lower()
+
+        if choice == 'a':
+            os.system("cls")
+            print("Adding Student Information")
+            print(" ------------------------------------ ")
+            student_id = input("Enter key for this student ---> ")
+
+            first_name = input("Enter student first name --->").upper()
+            last_name = input("Enter student last name ---> ").upper()
+            course = input("Enter student course ---> ").upper()
+            email = input("Enter student email address ---> ")
+
+            students_records[student_id] = [first_name, last_name, course, email]
+            print("Student data is saved")
+            continue
+        elif choice == 'b':
+            os.system("cls")
+            print("Printing Student Record")
+
+            for id, record in students_records.items():
+                print(f'Student ID {id} in Student Record {record}')
+            continue
+        elif choice == 'c':
+            os.system("cls")
+            print("Search for Student Record")
+            print("================================")
+
+            search_id = input("Input Student ID to Search ---> ").lower()
+            
+            if search_id in students_records.keys():
+                print("Record is found")
+                    #print the record search student
+                for i in students_records[search_id]:
+                        print(f' -- {i}')
+            else:
+                print("No record found")
+                break
+            continue
+        elif choice == 'd':
+            os.system("cls")
+            print("Delete a Student Record")
+            print("================================")
+
+            search_id = input("Input Student ID to Search ---> ").lower()
+            
+            if search_id in students_records.keys():
+                print("Record is found")
+                    #print the record search student
+                for i in students_records[search_id]:
+                    print(f' -- {i}')
+                students_records.pop(search_id)
+                print("Record is deleted")
+            else:
+                print("No record found")
+                break
+            continue
+        elif choice == 'e':
+            os.system('cls')
+            print("Edit / modify a Student Record")
+
+            search_id = input("Input Student ID to Search ---> ").lower()
+            
+            if search_id in students_records.keys():
+                print("Record is found")
+                        #print the record search student
+                for i in students_records[search_id]:
+                    print(f' -- {i}')
+                        
+                first_name = input("Enter new student first name --->").upper()
+                last_name = input("Enter new student last name ---> ").upper()
+                course = input("Enter new student course ---> ").upper()
+                email = input("Enter new student email address ---> ")
+
+                students_records[search_id][0] = first_name
+                students_records[search_id][1] = last_name
+                students_records[search_id][2] = course
+                students_records[search_id][3] = email
+
+                print("Data Updated")
+            else:
+                print("No record found")
+                break
+            continue
+        elif choice == 'f':
+            os.system("cls")
+            print("Export Data")
+            # file name, read / write
+            with open("student_records.json", 'w') as new_file:
+                json.dump(students_records, new_file, indent=4)
+            
+            print("Data Exported to JSON")
+            continue
+        elif choice == 'g':
+            os.system("cls")
+            print("Import Data")
+                    # file name, read / write
+            with open("student_records.json", 'r') as new_file:
+                student_json = json.load(new_file)
+
+            students_records = student_json
+            print("Data Imported to JSON")
+            continue
+
+        elif choice == 'h':
+            print("Exiting the program.....")
+            break
+        else:
+            print("Invalid Input")
+            continue
