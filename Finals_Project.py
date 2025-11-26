@@ -20,12 +20,12 @@ while isTrue == True:
     elif choice == "1":
         print("Welcome to my Activities Program")
         print("Choose between the given letters: ")
-        print("\nA - Activity (1-5)\nB - Activity (6-10)\nC - Activity (11-15)\nD - Activity (16-20)\nE - Activity (21-25)\nS - Stop\nM - Menu")
+        print("\nA - Activity (1-5)\nB - Activity (6-10)\nC - Activity (11-15)\nD - Activity (16-20)\nE - Activity (21-25)\nF - Activity (26-30)\nS - Stop\nM - Menu")
         act = input("Choose a letter:  ").lower()
         if act == "a":
             print(f"You've selected letter {act}")
             print("Welcome to Activities 1 to 5")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("a1 - Activity1\na2 - Activity2\na3 - Activity3\na4 - Activity4\na5 - Activity5\n\nM - Menu")
             act1 = input("Choose a number:  ").lower()
             if act1 == "a1":
@@ -62,7 +62,7 @@ while isTrue == True:
         elif act == "b":
             print(f"You've selected letter {act}")
             print("Welcome to Activities 6 to 10")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("a6 - Activity6\na7 - Activity7\na8 - Activity8\na9 - Activity9\na10 - Activity10\nM - Menu")
             act1 = input("Choose a number:  ").lower()
             if act1 == "a6":
@@ -99,7 +99,7 @@ while isTrue == True:
         elif act == "c":
             print(f"You've selected letter {act}")
             print("Welcome to Activities 11 to 15")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("a11 - Activity11\na12 - Activity12\na13 - Activity13\na14 - Activity14\na15 - Activity15\nM - Menu")
             act1 = input("Choose a number:  ").lower()
             if act1 == "a11":
@@ -136,7 +136,7 @@ while isTrue == True:
         elif act == "d":
             print(f"You've selected letter {act}")
             print("Welcome to Activities 11 to 15")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("a16 - Activity16\na17 - Activity17\na18 - Activity18\na19 - Activity19\na20 - Activity20\nM - Menu")
             act1 = input("Choose a number:  ").lower()
             if act1 == "a16":
@@ -172,7 +172,7 @@ while isTrue == True:
         elif act == "e":
             print(f"You've selected letter {act}")
             print("Welcome to Activities 21 to 25")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("a21 - Activity21\na22 - Activity22\na23 - Activity23\na24 - Activity24\na25 - Activity25\nM - Menu")
             act1 = input("Choose a number:  ").lower()
             if act1 == "a21":
@@ -205,6 +205,44 @@ while isTrue == True:
             else:
                 print("Invalid input, try again")
                 continue
+
+        elif act == "f":
+            print(f"You've selected letter {act}")
+            print("Welcome to Activities 26 to 30")
+            print("Choose between the given options: ")
+            print("a26 - Activity26\na27 - Activity27\na28 - Activity28\na29 - Activity29\na30 - Activity30\nM - Menu")
+            act1 = input("Choose a number:  ").lower()
+            if act1 == "a26":
+                print(f"You've selected number {act1}")
+                print("Welcome to my twenty-sixth python activity")
+                activity26()
+                continue
+            elif act1 == "a27":
+                print(f"You've selected number {act1}")
+                print("Welcome to my twenty-seventh python activity")
+                activity27()
+                continue
+            elif act1 == "a28":
+                print(f"You've selected number {act1}")
+                print("Welcome to my twenty-eighth python activity")
+                activity28()
+                continue
+            elif act1 == "a29":
+                print(f"You've selected number {act1}")
+                print("Welcome to my twenty-ninth python activity")
+                activity24()
+                continue
+            elif act1 == "a30":
+                print(f"You've selected number {act1}")
+                print("Welcome to my thirteeth python activity")
+                activity25()
+                continue
+            elif act1 == "m":
+                print("Proceeding to Menu...")
+            else:
+                print("Invalid input, try again")
+                continue
+
         elif act == "s": 
             print("Stopping The Program... ")
             break
@@ -213,12 +251,13 @@ while isTrue == True:
             continue
         else:
             print("Invalid input, choose only between the given choices.")
+            continue
 
 #Code Challenges
     if choice == "2":
         print("Welcome to my Code Challenges Program")
         print("Choose between the given letters: ")
-        print("\nA - CodeChallenge (1-5)\nB - CodeChallenge (6-10)\nC - CodeChallenge (11-15)\nS - Stop\nM - Menu")
+        print("\nA - CodeChallenge (1-5)\nB - CodeChallenge (6-10)\nC - CodeChallenge (11-15)\nD - CodeChallenge (16)\nS - Stop\nM - Menu")
         act = input("Choose a letter:  ").lower()
         if act == "a":
             print(f"You've selected letter {act}")
@@ -253,10 +292,11 @@ while isTrue == True:
                 continue
             elif act1 == "m":
                 print("Proceeding to Menu...")
+                continue
             else:
                 print("Invalid input, try again")
                 continue
-        elif act == "b":
+        elif act == "b": 
             print(f"You've selected letter {act}")
             print("Welcome to Code Challenges 6 to 10")
             print("Choose between the given numbers: ")
@@ -289,6 +329,7 @@ while isTrue == True:
                 continue
             elif act1 == "m":
                 print("Proceeding to Menu...")
+                continue
             else:
                 print("Invalid input, try again")
                 continue
@@ -325,9 +366,49 @@ while isTrue == True:
                 continue
             elif act1 == "m":
                 print("Proceeding to Menu...")
+                continue
             else:
                 print("Invalid input, try again")
                 continue
+
+        elif act == "d":
+            print(f"You've selected letter {act}")
+            print("Welcome to Code Challenge 16")
+            print("Choose between the given numbers: ")
+            print("c16 - CodeChallenge16\nM - Menu")
+            act1 = input("Choose a number:  ").lower()
+            if act1 == "c16":
+                print(f"You've selected number {act1}")
+                print("Welcome to my sixteenth code challenge")
+                codechallenge16()
+                continue
+            # elif act1 == "c12":
+            #     print(f"You've selected number {act1}")
+            #     print("Welcome to my twelfth code challenge")
+            #     codechallenge12()
+            #     continue
+            # elif act1 == "c13":
+            #     print(f"You've selected number {act1}")
+            #     print("Welcome to my thirteenth code challenge")
+            #     codechallenge13()
+            #     continue
+            # elif act1 == "c14":
+            #     print(f"You've selected number {act1}")
+            #     print("Welcome to my fourteenth code challenge")
+            #     codechallenge14()
+            #     continue
+            # elif act1 == "c15":
+            #     print(f"You've selected number {act1}")
+            #     print("Welcome to my fifteenth codechallenge")
+            #     codechallenge15()
+            #     continue
+            elif act1 == "m":
+                print("Proceeding to Menu...")
+                continue
+            else:
+                print("Invalid input, try again")
+                continue
+
         elif act == "s": 
             print("Stopping The Program... ")
             break
@@ -336,3 +417,4 @@ while isTrue == True:
             continue
         else:
             print("Invalid input, choose only between the given choices.")
+            continue
