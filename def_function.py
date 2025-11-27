@@ -279,9 +279,9 @@ def activity27():
             print("No results found for that key.")
     while go_lang == True:
         key = input("Input keys for this anime ---> ")
-        anim = input("Enter the anime title ---> ")
+        anim = input("Enter the anime title ---> ").upper()
         empty_directory[key] = anim
-        choice = input("Would you like to continue adding anime: \ny - Yes\nn - No\np - Print\ns - Search:\n ").lower()
+        choice = input("Would you like to continue adding anime: \nY - Yes\nN - No\nP - Print\nS - Search:\n ").lower()
         if choice == 'y':
             print("Continuing ... ")
             continue
