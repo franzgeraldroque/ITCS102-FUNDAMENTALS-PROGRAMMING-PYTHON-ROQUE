@@ -1,4 +1,4 @@
-from def_functions import *
+from def_function import *
 
 print("Welcome to my Finals Project")
 
@@ -27,7 +27,7 @@ while isTrue == True:
             print("Welcome to Activities 1 to 5")
             print("Choose between the given options: ")
             print("a1 - Activity1\na2 - Activity2\na3 - Activity3\na4 - Activity4\na5 - Activity5\n\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "a1":
                 print(f"You've selected number {act1}")
                 print("Welcome to my first python activity")
@@ -64,7 +64,7 @@ while isTrue == True:
             print("Welcome to Activities 6 to 10")
             print("Choose between the given options: ")
             print("a6 - Activity6\na7 - Activity7\na8 - Activity8\na9 - Activity9\na10 - Activity10\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "a6":
                 print(f"You've selected number {act1}")
                 print("Welcome to my sixth python activity")
@@ -101,7 +101,7 @@ while isTrue == True:
             print("Welcome to Activities 11 to 15")
             print("Choose between the given options: ")
             print("a11 - Activity11\na12 - Activity12\na13 - Activity13\na14 - Activity14\na15 - Activity15\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "a11":
                 print(f"You've selected number {act1}")
                 print("Welcome to my eleventh python activity")
@@ -138,7 +138,7 @@ while isTrue == True:
             print("Welcome to Activities 11 to 15")
             print("Choose between the given options: ")
             print("a16 - Activity16\na17 - Activity17\na18 - Activity18\na19 - Activity19\na20 - Activity20\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "a16":
                 print(f"You've selected number {act1}")
                 print("Welcome to my sixteenth python activity")
@@ -174,7 +174,7 @@ while isTrue == True:
             print("Welcome to Activities 21 to 25")
             print("Choose between the given options: ")
             print("a21 - Activity21\na22 - Activity22\na23 - Activity23\na24 - Activity24\na25 - Activity25\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "a21":
                 print(f"You've selected number {act1}")
                 print("Welcome to my twenty-first python activity")
@@ -211,7 +211,7 @@ while isTrue == True:
             print("Welcome to Activities 26 to 30")
             print("Choose between the given options: ")
             print("a26 - Activity26\na27 - Activity27\na28 - Activity28\na29 - Activity29\na30 - Activity30\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "a26":
                 print(f"You've selected number {act1}")
                 print("Welcome to my twenty-sixth python activity")
@@ -262,9 +262,9 @@ while isTrue == True:
         if act == "a":
             print(f"You've selected letter {act}")
             print("Welcome to Code Challenges 1 to 5")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("c1 - CodeChallenge1\nc2 - CodeChallenge2\nc3 - CodeChallenge3\nc4 - CodeChallenge4\nc5 - CodeChallenge5\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "c1":
                 print(f"You've selected number {act1}")
                 print("Welcome to my first code challenge")
@@ -299,9 +299,9 @@ while isTrue == True:
         elif act == "b": 
             print(f"You've selected letter {act}")
             print("Welcome to Code Challenges 6 to 10")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("c6 - CodeChallenge6\nc7 - CodeChallenge7\nc8 - CodeChallenge8\nc9 - CodeChallenge9\nc10 - CodeChallenge10\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "c6":
                 print(f"You've selected number {act1}")
                 print("Welcome to my sixth code challenge")
@@ -336,9 +336,9 @@ while isTrue == True:
         elif act == "c":
             print(f"You've selected letter {act}")
             print("Welcome to Code Challenges 11 to 15")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("c11 - CodeChallenge11\nc12 - CodeChallenge12\nc13 - CodeChallenge13\nc14 - CodeChallenge14\nc15 - CodeChallenge15\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "c11":
                 print(f"You've selected number {act1}")
                 print("Welcome to my eleventh code challenge")
@@ -374,9 +374,9 @@ while isTrue == True:
         elif act == "d":
             print(f"You've selected letter {act}")
             print("Welcome to Code Challenge 16")
-            print("Choose between the given numbers: ")
+            print("Choose between the given options: ")
             print("c16 - CodeChallenge16\nM - Menu")
-            act1 = input("Choose a number:  ").lower()
+            act1 = input("Choose the following options:  ").lower()
             if act1 == "c16":
                 print(f"You've selected number {act1}")
                 print("Welcome to my sixteenth code challenge")
