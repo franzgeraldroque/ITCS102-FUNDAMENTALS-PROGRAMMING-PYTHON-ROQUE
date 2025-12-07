@@ -526,7 +526,10 @@ while isTrue == True:
             if act1 == "c1":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my first code challenge")
+                print("\n\tWelcome to my first code challenge\n")
+
+                print("This code challenge contains Advanced String Formatting (Visual Art)")
+                print("\nIt uses extensive newlines (\n) and tabs (\t) to draw a large, diamond-shaped text-based art pattern (ASCII art) to the console, incorporating the user's name in the center.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge1()
@@ -535,7 +538,10 @@ while isTrue == True:
             elif act1 == "c2":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my second code challenge")
+                print("\n\tWelcome to my second code challenge\n")
+
+                print("This code challenge contains Greedy Algorithm (Denominations)")
+                print("\nIt implements a greedy approach to break down a monetary amount into the largest possible number of Philippine peso denominations (1000, 500, 200...). It uses integer division (//) and modulus (%) to count bills and calculate the remaining amount.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge2()
@@ -544,7 +550,10 @@ while isTrue == True:
             elif act1 == "c3":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my third code challenge")
+                print("\n\tWelcome to my third code challenge\t")
+
+                print("This code challenge contains Security (Hidden Input) & String Comparison")
+                print("\nIt uses the getpass module for hidden password input (security) and employs logical and to check if both the username and password match the stored credentials for access control.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge3()
@@ -553,7 +562,10 @@ while isTrue == True:
             elif act1 == "c4":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my fourth code challenge")
+                print("\n\tWelcome to my fourth code challenge\n")
+
+                print("This code challenge contains Conditional Logic (Even/Odd)")
+                print("\nIt takes a numeric input and uses the modulus operator (%) to check for a remainder of zero when divided by 2 (number % 2 == 0). This determines if the number is even or odd.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge4()
@@ -562,7 +574,10 @@ while isTrue == True:
             elif act1 == "c5":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my fifth code challenge")
+                print("\n\tWelcome to my fifth code challenge\n")
+
+                print("This code challenge contains Nested Conditionals (Recommender System)")
+                print("\nIt creates a basic Anime Recommender System using heavily nested if-elif-else statements. It processes input for genre, time, and decade to provide a recommendation based on specific combinations of choices.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge5()
@@ -586,7 +601,10 @@ while isTrue == True:
             if act1 == "c6":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my sixth code challenge")
+                print("\n\tWelcome to my sixth code challenge\n")
+
+                print("This code challenge contains Loop (Factorial Calculation)")
+                print("\nIt calculates the factorial of a user-inputted number. It uses a for loop that iterates backward to compute the product of all positive integers less than or equal to the number, showing the step-by-step calculation.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge6()
@@ -595,7 +613,10 @@ while isTrue == True:
             elif act1 == "c7":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my seventh code challenge")
+                print("\n\tWelcome to my seventh code challenge\n")
+
+                print("This code challenge contains Loop (Input Validation & Conditional Sum)")
+                print("\nIt uses a for loop to repeatedly ask for input. It implements an if-else check within the loop to validate if the number is odd; if it's odd, it is added to the sum; otherwise, the user is notified.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge7()
@@ -604,7 +625,10 @@ while isTrue == True:
             elif act1 == "c8":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my eighth code challenge")
+                print("\n\tWelcome to my eighth code challenge\n")
+
+                print("This code challenge contains Loop (Multiplication Table)")
+                print("\nIt takes a number from the user and uses a for loop to generate and display its multiplication table from 1 up to 10.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge8()
@@ -613,7 +637,10 @@ while isTrue == True:
             elif act1 == "c9":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my ninth code challenge")
+                print("\n\tWelcome to my ninth code challenge\n")
+
+                print("This code challenge contains Loop & Time Module (Countdown Timer)")
+                print("\nIt imports the time module and uses a for loop to iterate backward from a user-specified number. The time.sleep(1) function pauses the program for one second in each iteration, simulating a countdown timer.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge9()
@@ -622,7 +649,10 @@ while isTrue == True:
             elif act1 == "c10":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my tenth codechallenge")
+                print("\n\tWelcome to my tenth codechallenge\n")
+                
+                print("This code challenge contains Nested Loop (Inverted Pyramid of Stars)")
+                print("\nIt uses a nested for loop structure involving loops for spaces and loops for stars to draw an inverted pyramid pattern.")
                 print("\n---------------------------------------------\n")
                 print("OUTPUT: ")
                 codechallenge10()
@@ -647,8 +677,12 @@ while isTrue == True:
             if act1 == "c11":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my eleventh code challenge")
+                print("\n\tWelcome to my eleventh code challenge\n")
+
+                print("This code challenge contains Nested Loop (Full Diamond/Hourglass Pattern)")
+                print("\nIt uses two main sets of nested for loops to first draw an upright pyramid and then an inverted pyramid immediately below it, resulting in a full Diamond/Hourglass pattern.")
                 print("\n---------------------------------------------\n")
+                print('INPUT: \n# print("\t\t *", end=" ")\nfor s in range(1, 12, 1):\n\tfor o in range(11, s, -1):\n\t\tprint(" ", end=" ")\n\tfor f in range(1, s, 1):\n\t\tprint("*", end=" ")\n\tfor i in range(0, s, 1):\n\t\tprint("*", end=" ")\n\tprint()\nfor s in range(1, 12, 1):\n\tfor o in range(0, s, 1):\n\t\tprint(" ", end=" ")\n\tfor f in range(10, s, -1):\n\t\tprint("*", end=" ")\n\tfor i in range(11, s, -1):\n\t\tprint("*", end=" ")\n\tprint()\n# print("\t\t *", end="")\n')
                 print("OUTPUT: ")
                 codechallenge11()
                 print("\n---------------------------------------------\n")
@@ -656,8 +690,12 @@ while isTrue == True:
             elif act1 == "c12":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my twelfth code challenge")
+                print("\n\tWelcome to my twelfth code challenge\n")
+
+                print("This code challenge contains Nested Loop (Pyramid of Numbers)")
+                print("\nIt uses complex nested for loops (loops for spaces, descending numbers, and ascending numbers) to draw a classic numerical pyramid pattern, centered and symmetrical.")
                 print("\n---------------------------------------------\n")
+                print('INPUT: \nfor i in range(1, 7, 1):\n\tfor x in range(7, i, -1):\n\t\tprint(" ", end=" ")\n\tfor f in range(i, 0, -1):\n\t\tprint(f, end=" ")\n\tfor e in range(2, i + 1, 1):\n\t\tprint(e, end=" ")\n\tprint()\n')
                 print("OUTPUT: ")
                 codechallenge12()
                 print("\n---------------------------------------------\n")
@@ -665,8 +703,12 @@ while isTrue == True:
             elif act1 == "c13":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my thirteenth code challenge")
+                print("\n\tWelcome to my thirteenth code challenge\n")
+
+                print("This code challenge contains Nested Loop (Christmas Tree)")
+                print("\nIt is a very complex pattern that combines several sets of nested loops: a small diamond for the top star, followed by three large triangles (pyramids) to form the branches, and a square base for the trunk, creating a Christmas Tree pattern.")
                 print("\n---------------------------------------------\n")
+                print('INPUT: \n# Diamond\nfor s in range(1, 4, 1):\n\tfor x in range(1,4,1):\n\t\tprint(" ", end=" ")\n\tfor o in range(3, s, -1):\n\t\tprint(" ", end=" ")\n\tfor f in range(1, s, 1):\n\t\tprint("*", end=" ")\n\tfor i in range(0, s, 1):\n\t\tprint("*", end=" ")\n\tprint()\nfor s in range(1, 3, 1):\n\tfor x in range(1,4,1):\n\t\tprint(" ", end=" ")\n\tfor o in range(0, s, 1):\n\t\tprint(" ", end=" ")\n\tfor f in range(2, s, -1):\n\t\tprint("*", end=" ")\n\tfor i in range(3, s, -1):\n\t\tprint("*", end=" ")\n\tprint()\n#Triangles\nfor s in range(1, 7, 1):\n\tfor o in range(6, s, -1):\n\t\tprint(" ", end=" ")\n\tfor f in range(1, s, 1):\n\t\tprint("*", end=" ")\n\tfor i in range(0, s, 1):\n\t\tprint("*", end=" ")\n\tprint()\nfor s in range(1, 7, 1):\n\tfor o in range(6, s, -1):\n\t\tprint(" ", end=" ")\n\tfor f in range(1, s, 1):\n\t\tprint("*", end=" ")\n\tfor i in range(0, s, 1):\n\t\tprint("*", end=" ")\n\tprint()\nfor s in range(1, 7, 1):\n\t\tfor o in range(6, s, -1):\n\t\tprint(" ", end=" ")\n\tfor f in range(1, s, 1):\n\t\tprint("*", end=" ")\n\tfor i in range(0, s, 1):\n\t\tprint("*", end=" ")\n\tprint()\n#Trunk\nfor s in range(5):\n\tfor o in range(4):\n\t\tprint(" ", end= " ")\n\tprint("*", end= " ")\n\tprint("*", end= " ")\n\tprint("*", end= " ")\n\tprint()\n')
                 print("OUTPUT: ")
                 codechallenge13()
                 print("\n---------------------------------------------\n")
@@ -674,8 +716,12 @@ while isTrue == True:
             elif act1 == "c14":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my fourteenth code challenge")
+                print("\n\tWelcome to my fourteenth code challenge\n")
+
+                print("This code challenge contains While Loop (Conditional Accumulator)")
+                print("\nIt uses a while loop that runs indefinitely until a specific sentinel value (0) is entered (break). It checks if inputs are odd or even and uses a string variable (odd) to store a list of all odd numbers entered, while simultaneously calculating their sum.")
                 print("\n---------------------------------------------\n")
+                print('INPUT: \nname = input("Hi! What is your name? --> ")\nprint("++++++++++++++++++++++++++++")\nprint("ODD number compiler, type "0" to terminate the loop")\nsum = 0\nodd = ""\nnumber = True\nwhile number == True:\n\tnum = eval(input("Enter a number --> "))\n\tif num % 2 == 1:\n\t\tprint("ODD number detected")\n\t\todd += str(num) + ","\n\t\tsum += num\n\t\tcontinue\n\telif num == 0:\n\t\tprint("Loop Terminated")\n\t\tbreak\n\telse:\n\t\tif num % 2 == 0:\n\t\t\tprint("EVEN number detected")\n\t\telse:\n\t\t\tprint("Invalid number")\n\t\t\tcontinue\nprint(f"Hi {"name"} the sum of all ODD number is {"sum"}")\nprint(f"All the ODD numbers you input is {"odd"}")\n')
                 print("OUTPUT: ")
                 codechallenge14()
                 print("\n---------------------------------------------\n")
@@ -683,8 +729,12 @@ while isTrue == True:
             elif act1 == "c15":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1}")
-                print("Welcome to my fifteenth code challenge")
+                print("\n\tWelcome to my fifteenth code challenge\n")
+
+                print("This code challenge contains List Iteration & Validation (Watch List)")
+                print("\nIt uses a while loop to let the user continuously enter anime titles. It uses a list comprehension to check the user's input against a list of pre-defined anime (case-insensitive) and adds valid titles to a watch_list.")
                 print("\n---------------------------------------------\n")
+                print('INPUT: \nanim = ["Jujutsu Kaisen", "Naruto", "Attack on Titan", "MyHeroAcademia", "One Piece", "Chainsaw Man", "Demon Slayer", "Kurokos Basketball"]\nanime = True\nanime_lower = [anim.lower() for anim in anim]\nwatch_list = []\nwhile anime == True:\n\ttitle = input("Enter the title of the anime (or type "stop") to finish: ").lower()\n\tif title in anime_lower:\n\t\tindex = anime_lower.index(title)\n\t\torig_title = anim[index]\n\t\twatch_list.append(orig_title)\n\t\tprint(f"{"orig_title"} has been added to your anime watch list")\n\t\tcontinue\n\telif title == "stop":\n\t\tprint("You have stopped the anime recommendation lists")\n\t\tbreak\n\telse:\n\t\tprint("No such anime is found in the given anime recommendations")\n\t\tcontinue\nif watch_list:\n\tprint("\tYour selected anime list includes:")\n\tfor anim_title in watch_list:\n\t\tprint(f"- {anim_title.lower()}")\nelse:\n\tprint("\n\tYou didnt select any anime that is recommended for your watch list.")\n')
                 print("OUTPUT: ")
                 codechallenge15()
                 print("\n---------------------------------------------\n")
@@ -692,8 +742,12 @@ while isTrue == True:
             elif act1 == "c16":
                 print("---------------------------------------------")
                 print(f"You've selected number {act1} ")
-                print("Welcome to my sixteenth code challenge")
+                print("\n\tWelcome to my sixteenth code challenge\n")
+
+                print("This code challenge contains Dictionary & File Handling (Student Information System)")
+                print("\nIt is a robust menu-driven program that uses a dictionary (students_records) to store student information (using lists as values). It demonstrates advanced dictionary operations (Add, Print, Search, Delete, Edit) and uses the json module to Export and Import data to/from a file, simulating a simple database system.")
                 print("\n---------------------------------------------\n")
+                print('INPUT: \nimport os\nimport json\nos.system("cls")\nprint("STUDENT INFORMATION SYSTEM")\nprint("=======================================")\nstudents_records = {""}\nisTrue = True\nwhile isTrue == True:\n\tprint("Select from the options below \nA - Add Student Record\nB - Print all Record\nC - Search Student Record\nD - Delete a Student Record\nE - Edit Student Record\nF - Export Data\nG - Import Data\nH - Exit ")\n\tchoice = input("Enter your choice ---> ").lower()\n\tif choice == "a":\n\t\tos.system("cls")\n\t\tprint("Adding Student Information")\n\t\tprint(" ------------------------------------ ")\n\t\tstudent_id = input("Enter key for this student ---> ")\n\t\tfirst_name = input("Enter student first name --->").upper()\n\t\tlast_name = input("Enter student last name ---> ").upper()\n\t\tcourse = input("Enter student course ---> ").upper()\n\t\temail = input("Enter student email address ---> ")\n\t\tstudents_records[student_id] = [first_name, last_name, course, email]\n\t\tprint("Student data is saved")\n\t\tcontinue\n\telif choice == "b":\n\t\tos.system("cls")\n\t\tprint("Printing Student Record")\n\t\tfor id, record in students_records.items():\n\t\t\tprint(f"Student ID {"id"} in Student Record {"record"}")\n\t\tcontinue\n\telif choice == "c":\n\t\tos.system("cls")\n\t\tprint("Search for Student Record")\n\t\tprint("================================")\n\t\tsearch_id = input("Input Student ID to Search ---> ").lower()\n\t\tif search_id in students_records.keys():\n\t\t\tprint("Record is found")\n\t\t\t#print the record search student\n\t\t\tfor i in students_records[search_id]:\n\t\t\t\tprint(f" --- {"i"}")\n\t\telse:\n\t\t\tprint("No record found")\n\t\t\tbreak\t\n\t\tcontinue\n\telif choice == "d":\n\t\tos.system("cls")\n\t\tprint("Delete a Student Record")\n\t\tprint("================================")\n\t\tsearch_id = input("Input Student ID to Search ---> ").lower()\n\t\tif search_id in students_records.keys():\n\t\t\tprint("Record is found")\n\t\t\t#print the record search student\n\t\t\tfor i in students_records[search_id]:\n\t\t\t\tprint(f" -- {"i"}")\n\t\t\tstudents_records.pop(search_id)\n\t\t\tprint("Record is deleted")\n\t\telse:\n\t\t\tprint("No record found")\n\t\t\tbreak\n\t\tcontinue\n\telif choice == "e":\n\t\tos.system("cls")\n\t\tprint("Edit / modify a Student Record")\n\t\tsearch_id = input("Input Student ID to Search ---> ").lower()\n\t\tfor id in students_records.keys():\n\t\t\tif search_id in students_records.keys():\n\t\t\t\tprint("Record is found")\n\t\t\t#print the record search student\n\t\t\t\tfor i in students_records[search_id]:\n\t\t\t\t\tprint(f" -- {"i"}")\n\t\t\t\tfirst_name = input("Enter new student first name --->").upper()\n\t\t\t\tlast_name = input("Enter new student last name ---> ").upper()\n\t\t\t\tcourse = input("Enter new student course ---> ").upper()\n\t\t\t\temail = input("Enter new student email address ---> ")\n\t\t\t\tstudents_records[search_id][0] = first_name\n\t\t\t\tstudents_records[search_id][1] = last_name\n\t\t\t\tstudents_records[search_id][2] = course\n\t\t\t\tstudents_records[search_id][3] = email\n\t\t\t\tprint("Data Updated")\n\t\t\telse:\n\t\t\t\tprint("No record found")\n\t\t\t\tbreak\n\t\tcontinue\n\telif choice == "f":\n\t\tos.system("cls")\n\t\tprint("Export Data")\n\t\t# file name, read / write\n\t\twith open("student_records.json", "w") as new_file:\n\t\t\tjson.dump(students_records, new_file, indent=4)\n\t\tprint("Data Exported to JSON")\n\t\tcontinue\n\telif choice == "g":\n\t\tos.system("cls")\n\t\tprint("Import Data")\n\t\t# file name, read / write\n\t\twith open("student_records.json", "r") as new_file:\n\t\t\tstudent_json = json.load(new_file)\n\t\tstudents_records = student_json\n\t\tprint("Data Imported to JSON")\n\t\tcontinue\n\telif choice == "h":\n\t\tprint("Exiting the program.....")\n\t\tbreak\n\telse:\n\t\tprint("Invalid Input")\n\t\tcontinue\n')
                 print("OUTPUT: ")
                 codechallenge16()
                 print("\n---------------------------------------------\n")
